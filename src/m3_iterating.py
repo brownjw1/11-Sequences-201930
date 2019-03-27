@@ -120,11 +120,11 @@ def count_negatives(seq):
     # DONE: 3. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     # -------------------------------------------------------------------------
-    total=0
-    length=len(seq)
-    for k in range (length):
-        if seq[k]<0:
-            total+=1
+    total = 0
+    length = len(seq)
+    for k in range(length):
+        if seq[k] < 0:
+            total += 1
     return total
 
 
@@ -225,7 +225,6 @@ def run_test_count_short_ones():
     print('       actual:  ', actual)
 
 
-
 def count_short_ones(seq_of_lists):
     """
     What comes in:  An sequence of sequences.
@@ -250,10 +249,10 @@ def count_short_ones(seq_of_lists):
     # DONE: 5. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     # ------------------------------------------------------------------
-    total=0
+    total = 0
     for k in range(len(seq_of_lists)):
-        if(len(seq_of_lists[k])<3):
-            total+=1
+        if (len(seq_of_lists[k]) < 3):
+            total += 1
     return total
 
 
@@ -337,8 +336,8 @@ def draw_circles(window, points, radius, color):
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
     for k in range(len(points)):
-        cir=rg.Circle(points[k],radius)
-        cir.fill_color=color
+        cir = rg.Circle(points[k], radius)
+        cir.fill_color = color
         cir.attach_to(window)
     window.render()
 
